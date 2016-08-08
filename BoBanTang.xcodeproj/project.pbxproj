@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0D161D6D1D55CCBE00442067 /* bus.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D161D6C1D55CCBE00442067 /* bus.m */; };
 		0D3C54411D53749E003B543C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D3C54401D53749E003B543C /* main.m */; };
 		0D3C54441D53749E003B543C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D3C54431D53749E003B543C /* AppDelegate.m */; };
 		0D3C54471D53749E003B543C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D3C54461D53749E003B543C /* ViewController.m */; };
@@ -16,6 +17,9 @@
 		0D3C54521D53749E003B543C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D3C54501D53749E003B543C /* LaunchScreen.storyboard */; };
 		0D3C545D1D53749E003B543C /* BoBanTangTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D3C545C1D53749E003B543C /* BoBanTangTests.m */; };
 		0D3C54681D53749E003B543C /* BoBanTangUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D3C54671D53749E003B543C /* BoBanTangUITests.m */; };
+		2A9483BCE81D4809DA330738 /* libPods-BoBanTang.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A4ECDB7BE599060672FBD377 /* libPods-BoBanTang.a */; };
+		85D131D1CA93AB2FC55F9F1F /* libPods-BoBanTangUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ED4F9A5ECEF76C54358DB51A /* libPods-BoBanTangUITests.a */; };
+		9F8916F3BC9B5914DA306371 /* libPods-BoBanTangTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E026B1C518CB1DDC8574E85C /* libPods-BoBanTangTests.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +40,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		00E9D14D7A3834C149619F88 /* Pods-BoBanTang.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BoBanTang.release.xcconfig"; path = "Pods/Target Support Files/Pods-BoBanTang/Pods-BoBanTang.release.xcconfig"; sourceTree = "<group>"; };
+		0D161D6B1D55CCBE00442067 /* bus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bus.h; sourceTree = "<group>"; };
+		0D161D6C1D55CCBE00442067 /* bus.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = bus.m; sourceTree = "<group>"; };
 		0D3C543C1D53749E003B543C /* BoBanTang.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BoBanTang.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0D3C54401D53749E003B543C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		0D3C54421D53749E003B543C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -53,6 +60,14 @@
 		0D3C54631D53749E003B543C /* BoBanTangUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BoBanTangUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0D3C54671D53749E003B543C /* BoBanTangUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BoBanTangUITests.m; sourceTree = "<group>"; };
 		0D3C54691D53749E003B543C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		50B2F7A2175048D51BCFF052 /* Pods-BoBanTangTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BoBanTangTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-BoBanTangTests/Pods-BoBanTangTests.release.xcconfig"; sourceTree = "<group>"; };
+		54CF643DDDC8BA1366252625 /* Pods-BoBanTangUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BoBanTangUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-BoBanTangUITests/Pods-BoBanTangUITests.release.xcconfig"; sourceTree = "<group>"; };
+		684864AB44B7B9FC46725FE5 /* Pods-BoBanTangUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BoBanTangUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BoBanTangUITests/Pods-BoBanTangUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		98AE035A335666E6282E90B4 /* Pods-BoBanTangTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BoBanTangTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BoBanTangTests/Pods-BoBanTangTests.debug.xcconfig"; sourceTree = "<group>"; };
+		A4ECDB7BE599060672FBD377 /* libPods-BoBanTang.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BoBanTang.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E026B1C518CB1DDC8574E85C /* libPods-BoBanTangTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BoBanTangTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		ED4F9A5ECEF76C54358DB51A /* libPods-BoBanTangUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BoBanTangUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F1A8F9AF5872D1179A46CFA0 /* Pods-BoBanTang.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BoBanTang.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BoBanTang/Pods-BoBanTang.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +75,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2A9483BCE81D4809DA330738 /* libPods-BoBanTang.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -67,6 +83,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9F8916F3BC9B5914DA306371 /* libPods-BoBanTangTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,6 +91,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				85D131D1CA93AB2FC55F9F1F /* libPods-BoBanTangUITests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -87,6 +105,8 @@
 				0D3C545B1D53749E003B543C /* BoBanTangTests */,
 				0D3C54661D53749E003B543C /* BoBanTangUITests */,
 				0D3C543D1D53749E003B543C /* Products */,
+				6950EC4D47D9A582CA289C9C /* Pods */,
+				298734F3E88470E72679BE3F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -113,6 +133,8 @@
 				0D3C54531D53749E003B543C /* Info.plist */,
 				0D3C544B1D53749E003B543C /* BoBanTang.xcdatamodeld */,
 				0D3C543F1D53749E003B543C /* Supporting Files */,
+				0D161D6B1D55CCBE00442067 /* bus.h */,
+				0D161D6C1D55CCBE00442067 /* bus.m */,
 			);
 			path = BoBanTang;
 			sourceTree = "<group>";
@@ -143,6 +165,29 @@
 			path = BoBanTangUITests;
 			sourceTree = "<group>";
 		};
+		298734F3E88470E72679BE3F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A4ECDB7BE599060672FBD377 /* libPods-BoBanTang.a */,
+				E026B1C518CB1DDC8574E85C /* libPods-BoBanTangTests.a */,
+				ED4F9A5ECEF76C54358DB51A /* libPods-BoBanTangUITests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6950EC4D47D9A582CA289C9C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F1A8F9AF5872D1179A46CFA0 /* Pods-BoBanTang.debug.xcconfig */,
+				00E9D14D7A3834C149619F88 /* Pods-BoBanTang.release.xcconfig */,
+				98AE035A335666E6282E90B4 /* Pods-BoBanTangTests.debug.xcconfig */,
+				50B2F7A2175048D51BCFF052 /* Pods-BoBanTangTests.release.xcconfig */,
+				684864AB44B7B9FC46725FE5 /* Pods-BoBanTangUITests.debug.xcconfig */,
+				54CF643DDDC8BA1366252625 /* Pods-BoBanTangUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -150,9 +195,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0D3C546C1D53749E003B543C /* Build configuration list for PBXNativeTarget "BoBanTang" */;
 			buildPhases = (
+				CADBD6D94A4EDCCD04154E2E /* [CP] Check Pods Manifest.lock */,
 				0D3C54381D53749E003B543C /* Sources */,
 				0D3C54391D53749E003B543C /* Frameworks */,
 				0D3C543A1D53749E003B543C /* Resources */,
+				B2C120CB42960DDEA8438F0B /* [CP] Embed Pods Frameworks */,
+				3F59D03B1304267C7CAECA79 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -167,9 +215,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0D3C546F1D53749E003B543C /* Build configuration list for PBXNativeTarget "BoBanTangTests" */;
 			buildPhases = (
+				E3FC5F17BB170AA4DE52B227 /* [CP] Check Pods Manifest.lock */,
 				0D3C54541D53749E003B543C /* Sources */,
 				0D3C54551D53749E003B543C /* Frameworks */,
 				0D3C54561D53749E003B543C /* Resources */,
+				1A7F75074435AB358D3D152B /* [CP] Embed Pods Frameworks */,
+				998B1C14807EB952476A9688 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -185,9 +236,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0D3C54721D53749E003B543C /* Build configuration list for PBXNativeTarget "BoBanTangUITests" */;
 			buildPhases = (
+				C2FFC0CD34E7FFB9840EECA8 /* [CP] Check Pods Manifest.lock */,
 				0D3C545F1D53749E003B543C /* Sources */,
 				0D3C54601D53749E003B543C /* Frameworks */,
 				0D3C54611D53749E003B543C /* Resources */,
+				B0586BAF04D005C542833584 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -268,11 +321,135 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1A7F75074435AB358D3D152B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BoBanTangTests/Pods-BoBanTangTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3F59D03B1304267C7CAECA79 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BoBanTang/Pods-BoBanTang-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		998B1C14807EB952476A9688 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BoBanTangTests/Pods-BoBanTangTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B0586BAF04D005C542833584 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BoBanTangUITests/Pods-BoBanTangUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B2C120CB42960DDEA8438F0B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BoBanTang/Pods-BoBanTang-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C2FFC0CD34E7FFB9840EECA8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		CADBD6D94A4EDCCD04154E2E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E3FC5F17BB170AA4DE52B227 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		0D3C54381D53749E003B543C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0D161D6D1D55CCBE00442067 /* bus.m in Sources */,
 				0D3C54471D53749E003B543C /* ViewController.m in Sources */,
 				0D3C54441D53749E003B543C /* AppDelegate.m in Sources */,
 				0D3C544D1D53749E003B543C /* BoBanTang.xcdatamodeld in Sources */,
@@ -415,6 +592,7 @@
 		};
 		0D3C546D1D53749E003B543C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F1A8F9AF5872D1179A46CFA0 /* Pods-BoBanTang.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = BoBanTang/Info.plist;
@@ -426,6 +604,7 @@
 		};
 		0D3C546E1D53749E003B543C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 00E9D14D7A3834C149619F88 /* Pods-BoBanTang.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = BoBanTang/Info.plist;
@@ -437,6 +616,7 @@
 		};
 		0D3C54701D53749E003B543C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 98AE035A335666E6282E90B4 /* Pods-BoBanTangTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = BoBanTangTests/Info.plist;
@@ -449,6 +629,7 @@
 		};
 		0D3C54711D53749E003B543C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 50B2F7A2175048D51BCFF052 /* Pods-BoBanTangTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = BoBanTangTests/Info.plist;
@@ -461,6 +642,7 @@
 		};
 		0D3C54731D53749E003B543C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 684864AB44B7B9FC46725FE5 /* Pods-BoBanTangUITests.debug.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = BoBanTangUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -472,6 +654,7 @@
 		};
 		0D3C54741D53749E003B543C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 54CF643DDDC8BA1366252625 /* Pods-BoBanTangUITests.release.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = BoBanTangUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -500,6 +683,7 @@
 				0D3C546E1D53749E003B543C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0D3C546F1D53749E003B543C /* Build configuration list for PBXNativeTarget "BoBanTangTests" */ = {
 			isa = XCConfigurationList;
@@ -508,6 +692,7 @@
 				0D3C54711D53749E003B543C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0D3C54721D53749E003B543C /* Build configuration list for PBXNativeTarget "BoBanTangUITests" */ = {
 			isa = XCConfigurationList;
@@ -516,6 +701,7 @@
 				0D3C54741D53749E003B543C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
