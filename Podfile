@@ -8,6 +8,7 @@ target 'BoBanTang' do
   # Pods for BoBanTang
 	pod 'BaiduMapKit' #百度地图SDK
 	pod 'JSONModel'
+    pod "DXPopover"
     pod 'AFNetworking', '~> 3.0'
   target 'BoBanTangTests' do
     inherit! :search_paths

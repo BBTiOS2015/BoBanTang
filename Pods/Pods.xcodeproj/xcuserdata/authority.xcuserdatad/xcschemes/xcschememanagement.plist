@@ -9,6 +9,16 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>DXPopover-DXPopover.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>DXPopover.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>JSONModel.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -32,6 +42,11 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>15E71DC389AF81EB7D768EBA0F13A0C2</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>4E7A7D95D76E4C2F4C1C898E43E48F33</key>
 		<dict>
 			<key>primary</key>
@@ -47,12 +62,17 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>E89EA0620E22EDB775A7C107518644DD</key>
+		<key>AC2A979A25C32627CF142C3E8EB76342</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>F608D2DBA7101A8102DE2D687B7083D7</key>
+		<key>BD25B2157D8BCA944D6FF3EC2B073ECB</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>E89EA0620E22EDB775A7C107518644DD</key>
 		<dict>
 			<key>primary</key>
 			<true/>
