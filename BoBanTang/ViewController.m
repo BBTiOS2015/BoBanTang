@@ -27,6 +27,7 @@
 
 CLLocationCoordinate2D center;
 BMKCoordinateSpan span;
+NSTimer *timer;
 double latitude,longitude;
 @synthesize popover;
 @synthesize popview;
@@ -55,7 +56,7 @@ double latitude,longitude;
     HeatAnnotations=[[NSMutableArray alloc]init];
     popview=nil;
     
-    campusSwitch=[[UIButton alloc] initWithFrame:CGRectMake(325, 640, 50, 50)];
+    campusSwitch=[[UIButton alloc] initWithFrame:CGRectMake(0.8*self.view.bounds.size.width, 0.85*self.view.bounds.size.height, 0.15*self.view.bounds.size.width,0.15*self.view.bounds.size.width)];
     [campusSwitch setImage:[UIImage imageNamed:@"n_s.png"] forState:UIControlStateNormal];
     [campusSwitch addTarget:self action:@selector(NSControlPressed:) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:campusSwitch];
@@ -64,10 +65,10 @@ double latitude,longitude;
     location=[[UIButton alloc] initWithFrame:CGRectMake(40, 645, 40, 40)];
     [location setImage:[UIImage imageNamed:@"map_location.png"] forState:UIControlStateNormal];
     [location addTarget:self action:@selector(locationButtonPressed:) forControlEvents:UIControlEventTouchUpInside];
-    [self.view addSubview:location];
+ //   [self.view addSubview:location];
     
     
-    campusBus=[[UIButton alloc] initWithFrame:CGRectMake(330, 70, 40, 40)];
+    campusBus=[[UIButton alloc] initWithFrame:CGRectMake(0.82*self.view.bounds.size.width, 0.2*self.view.bounds.size.height, 0.1*self.view.bounds.size.width, 0.1*self.view.bounds.size.width)];
     [campusBus setImage:[UIImage imageNamed:@"map_bus.png"] forState:UIControlStateNormal];
     [campusBus addTarget:self action:@selector(busButtonPressed:) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:campusBus];
@@ -145,6 +146,7 @@ double latitude,longitude;
             default:
                 break;
         }
+        newAnnotationView.animatesDrop=YES;
         return newAnnotationView;
     }
     return nil;
@@ -184,11 +186,12 @@ double latitude,longitude;
 
 }
 
+
 -(void) busSwitchAction:(id)sender {
     UISwitch *switchButton = (UISwitch*)sender;
     BOOL isButtonOn = [switchButton isOn];
     if (isButtonOn) {
-        
+
         NSURLSessionConfiguration *configuration = [NSURLSessionConfiguration defaultSessionConfiguration];
         AFURLSessionManager *manager = [[AFURLSessionManager alloc] initWithSessionConfiguration:configuration];
         NSURL *URL = [NSURL URLWithString:@"http://bbt.100steps.net/go/data/"];
@@ -210,11 +213,45 @@ double latitude,longitude;
             }
         }];
         [dataTask resume];
+        
+        
+        timer=[NSTimer scheduledTimerWithTimeInterval:5 target:self selector:@selector(timeAction) userInfo:nil repeats:YES];
+        [[NSRunLoop mainRunLoop] addTimer:timer forMode:NSDefaultRunLoopMode];
 
     }else {
         [_mapView removeAnnotations:BusAnnotations];
         [BusAnnotations removeAllObjects];
+        [timer invalidate];
     }
+}
+
+-(void)timeAction{
+    [_mapView removeAnnotations:BusAnnotations];
+    [BusAnnotations removeAllObjects];
+    NSURLSessionConfiguration *configuration = [NSURLSessionConfiguration defaultSessionConfiguration];
+    AFURLSessionManager *manager = [[AFURLSessionManager alloc] initWithSessionConfiguration:configuration];
+    NSURL *URL = [NSURL URLWithString:@"http://bbt.100steps.net/go/data/"];
+    NSURLRequest *request = [NSURLRequest requestWithURL:URL];
+    //http://bbt.100steps.net/go/data/
+    NSURLSessionDataTask *dataTask = [manager dataTaskWithRequest:request completionHandler:^(NSURLResponse *response, id responseObject, NSError *error) {
+        if (error) {
+            NSLog(@"Error: %@", error);
+        } else {
+            
+            for (int i=1; i<=4; i++) {
+                NSDictionary *busInfo=[responseObject objectForKey:[NSString stringWithFormat:@"BUS%i",i]];
+                CampusBus *bus=[[CampusBus alloc]initWithAttributes:busInfo];
+                [arrayBus addObject:bus];
+            }
+            
+            [self setAnnotionsWithList:arrayBus];
+            
+        }
+    }];
+    [dataTask resume];
+    
+
+
 }
 
 -(void)heatSwitchAction:(id)sender
