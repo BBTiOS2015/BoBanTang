@@ -146,7 +146,7 @@ double latitude,longitude;
             default:
                 break;
         }
-        newAnnotationView.animatesDrop=YES;
+//        newAnnotationView.animatesDrop=YES;
         return newAnnotationView;
     }
     return nil;
@@ -219,6 +219,7 @@ double latitude,longitude;
         [[NSRunLoop mainRunLoop] addTimer:timer forMode:NSDefaultRunLoopMode];
 
     }else {
+        [arrayBus removeAllObjects];
         [_mapView removeAnnotations:BusAnnotations];
         [BusAnnotations removeAllObjects];
         [timer invalidate];
@@ -226,6 +227,7 @@ double latitude,longitude;
 }
 
 -(void)timeAction{
+    [arrayBus removeAllObjects];
     [_mapView removeAnnotations:BusAnnotations];
     [BusAnnotations removeAllObjects];
     NSURLSessionConfiguration *configuration = [NSURLSessionConfiguration defaultSessionConfiguration];
